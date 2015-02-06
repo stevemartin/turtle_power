@@ -1,0 +1,40 @@
+{
+   "took": 3,
+   "timed_out": false,
+   "_shards": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0
+   },
+   "hits": {
+      "total": 25,
+      "max_score": 0,
+      "hits": []
+   },
+   "aggregations": {
+      "range": {
+         "buckets": [
+            {
+               "key_as_string": "2015-01-29T00:00:00.000Z",
+               "key": 1422489600000,
+               "doc_count": 5
+            },
+            {
+               "key_as_string": "2015-01-30T00:00:00.000Z",
+               "key": 1422576000000,
+               "doc_count": 3
+            },
+            {
+               "key_as_string": "2015-02-02T00:00:00.000Z",
+               "key": 1422835200000,
+               "doc_count": 12
+            },
+            {
+               "key_as_string": "2015-02-03T00:00:00.000Z",
+               "key": 1422921600000,
+               "doc_count": 5
+            }
+         ]
+      }
+   }
+}
