@@ -8,22 +8,28 @@
     <script src="require.js"></script>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="typeahead.bundle.min.js"></script>
+    <script src="typeahead.jquery.min.js"></script>
+    <script src="bloodhound.min.js"></script>
     <script>require(["main"], function () {})</script>
-      <script>
-       function thing(){
-
-      }
-    </script>
+    <script>require(["search"], function () {})</script>
   </head>
 
   <body>
 
     <div class='container-fluid'>
       <header>
-        <h1>THIS IS MY BEST TURTLE, BUT A BIT RETARDED</h1>
-        <span class="glyphicon glyphicon-phone-alt"></span>
-        <button type="button" class="btn btn-primary">I'M THE RETARDED ONE</button>
+          <h1>TURTLE</h1>
       </header>
+      <section>
+        <label>Find product:&nbsp;</label><input type="text" name="search_input" id="find_product" />
+        <label>Find product by ID:&nbsp;</label><input type="text" name="search_input" id="find_product_id" />
+        <button id="gogo">GO!</button>
+        <ul id='results'></ul>
+      </section>
+      <section>
+        <div id='graph'></div>
+      </section>
     </div>
   </body>
 </html>
